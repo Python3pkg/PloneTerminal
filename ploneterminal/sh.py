@@ -24,7 +24,7 @@ for cmd in ('fortune', 'moo'):
             log.info('%s binary found at: %s', cmd, binary)
         else:
             log.error('No %s binary found in $PATH', cmd)
-    except Exception, e:
+    except Exception as e:
         log.exception(e)
 
 
